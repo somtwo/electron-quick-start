@@ -26,12 +26,12 @@ function createWindow () {
     show: false
   });
 
+  mainWindow.setMenu(null);
+
   if(onWindows) {
     // Uncomment the next line and it will be a different (incorrect) size
-    // mainWindow.setSize(800, 600);
+    //mainWindow.setSize(800, 600);
   }
-
-  mainWindow.setMenu(null);
 
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, 'index.html'),
