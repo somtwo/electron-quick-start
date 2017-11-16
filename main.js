@@ -21,8 +21,8 @@ function createWindow () {
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
-		useContentSize: true,
-		resizable: false,
+    useContentSize: true,
+    resizable: false,
     show: false
   });
 
@@ -30,7 +30,7 @@ function createWindow () {
 
   if(onWindows) {
     // Uncomment the next line and it will be a different (incorrect) size
-    //mainWindow.setSize(800, 600);
+    // mainWindow.setContentSize(800, 600);
   }
 
   mainWindow.loadURL(url.format({
